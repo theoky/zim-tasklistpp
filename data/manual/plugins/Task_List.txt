@@ -97,13 +97,13 @@ Another way to flag non-actionable tasks is using special tags. E.g. a generic t
 === Sepcial cases of Non-actionable tasks ===
 
 == Tasks with future dates ==
-Tasks with future dates are tasks which need to be done but can only started at a specific date in the future. They are written in the same way as tasks with due dates, except for the "d" replaced with an "f".
+Tasks with future dates are tasks which need to be done but can or should only start at a specific date in the future. They are written in the same way as tasks with due dates, except for the "d" replaced with an "f".
 E.g., if you know you need to change your tires on October the first, then you could write:
 
 	Change tires
 	[ ] [f: 2099-10-01] change tires
 
-This task will be shown as non-actionable task in the task list until October, 1^{st}, 2099.
+This task will be shown as a non-actionable task in the task list until October, 1^{st}, 2099. Then it will become actionable.
 
 == Agenda tasks ==
 These tasks are useful for meetings. You can write
@@ -115,7 +115,8 @@ These tasks are useful for meetings. You can write
 	[ ] Topic 2
 	[ ] Miscellaneous
 
-"Agenda" is a keyword specified in the preferences. These tasks won't show up in the task list at all.
+During the meeting you can tick off the finished topics and the tasks won't show up in the task list at all.
+"Agenda" is a keyword specified in the preferences.
 
 == Template tasks ==
 Related to agenda tasks are template tasks. Imagine the tasks for a new project.
@@ -126,7 +127,8 @@ Related to agenda tasks are template tasks. Imagine the tasks for a new project.
 	[ ] Check resources.
 	[ ] etc.
 
-Such a task lists can be reused with different projects but it doesn't make sense to have these tasks in the task list - they should be hidden.
-Writing the word "Template" in fron of such a list hides these tasks from the task list. 
+Such a task lists can be reused with different projects but it doesn't make sense to have these tasks in the task list. They are actionable only in the context of a project and should be hidden otherwise.
+Writing the word "Template" in front of such a list hides these tasks from the task list.
+ 
 If you want to start a new project, just copy all tasks and remove the word "Template". The tasks will then be visible in the task list.
 "Template" is a keyword specified in the preferences.
